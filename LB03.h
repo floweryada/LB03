@@ -16,6 +16,8 @@ public:
     void popFromBegin();
 
      private:
+         OneConnList (const OneConnList &original);
+         OneConnList & operator = (const OneConnList & rhs);
         struct Node
         {
             Data data;
